@@ -1,10 +1,18 @@
-body {
+body, html {
+  height: 100%
+}
+
+.bkg {
   background-image: linear-gradient(
   #F6F8FC 0%, 
   #DAE3F3 68%, 
   #BDDFEE 83%, 
   #8FAADC 100%
   );
+  background-repeat: no-repeat;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 iframe {
@@ -13,10 +21,10 @@ iframe {
   color: black;
 }
 
-button {
-  background-color: white;
+.button {
+  background-color: cornsilk;
   border: none;
-  color: white;
+  color: black;
   padding: 15px 32px;
   text-align: center;
   display: inline-block;
