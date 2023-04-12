@@ -5,7 +5,7 @@ body {
 }
 
 .bkg {
-  height: 100vh;
+  height: 100%;
   background-image: url("./images/watercolor_from_photo_flowers_resized1500px.png");
   background-repeat: no-repeat;
   min-height: 100%;

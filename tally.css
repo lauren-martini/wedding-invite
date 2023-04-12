@@ -1,0 +1,28 @@
+html, body {margin: auto; 
+    height: 100vh; 
+    overflow: hidden;}
+
+#cover-img {
+    opacity: 100%;
+}
+
+#iframe_container {
+    background-color: white;
+    opacity: 92.5%;
+    width: 50%;
+    height: 85vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+iframe {position: relative; 
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    height: 92%;
+    width: 92%;
+    opacity: 100%;
+}
