@@ -1,6 +1,8 @@
-background-image: linear-gradient(
+body {
+  background-image: linear-gradient(
   #F6F8FC 0%, 
   #DAE3F3 68%, 
   #BDDFEE 83%, 
   #8FAADC 100%
-;
+  );
+}
