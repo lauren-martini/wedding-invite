@@ -5,12 +5,8 @@ body {
 }
 
 .bkg {
-  background-image: linear-gradient(
-  #F6F8FC 0%, 
-  #DAE3F3 68%, 
-  #BDDFEE 83%, 
-  #8FAADC 100%
-  );
+  height: 100vh;
+  background-image: url("./images/watercolor_from_photo_flowers_resized1500px.png");
   background-repeat: no-repeat;
   min-height: 100%;
   background-position: center;
@@ -25,7 +21,7 @@ body {
 #invite {
   position: relative;
   margin: auto;
-  height: 100%;
+  height: 100vh;
 }
 
 .button { /*RSVP button*/
@@ -50,7 +46,7 @@ body {
   margin: 4px 2px;
   cursor: pointer;
   position: absolute;
-  top: 51%;
+  top: 50%;
   left: 50%; /*Still need to account for width of button. Transform. */
   transform: translateX(-50%);
 }
