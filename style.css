@@ -6,3 +6,9 @@ body {
   #8FAADC 100%
   );
 }
+
+iframe {
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+}
