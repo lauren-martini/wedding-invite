@@ -3,6 +3,7 @@ body {
   /*max-width: 1500px;*/
   text-align: center;
   margin: 0;
+  border: 0;
 }
 
 .bkg {
@@ -32,13 +33,26 @@ body {
   transform: translatey(-50%);
 }
 
+#button-container {
+  display: inline-block;
+  position: absolute;
+  /* height: 4%;
+  width: 16%; */
+  top: 51vh;
+  left: 50vh; /*Still need to account for width of button. Transform. */
+  transform: translateX(-50%);
+  vertical-align: middle;
+  border: none;
+}
+
 .button { /*RSVP button*/
-  background-color: cornsilk;
-  border: solid;
-  border-color: black;
-  border-width: 0.1em;
-  border-radius: 10%;
-  color: black;
+  /* line-height: 100%;
+  position: relative;
+  height: 100%;
+  font-size: 3vh; */
+  margin: auto;
+  padding: 0.4rem 0.25rem 0.4rem 0.25rem;
+  font-size: 2.5vh;
   font-family:'Lucida Sans', 
     'Lucida Sans Regular', 
     'Lucida Grande', 
@@ -47,14 +61,13 @@ body {
     Verdana, 
     sans-serif;
   /*font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-  padding: 15px 32px;
   text-align: center;
-  display: inline-block;
-  font-size: 1em;
-  margin: 4px 2px;
+  text-decoration: none;
   cursor: pointer;
-  position: absolute;
-  top: 50%;
-  left: 50%; /*Still need to account for width of button. Transform. */
-  transform: translateX(-50%);
+  border: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 10%;
+  color: black;
+  background-color: cornsilk;
 }
