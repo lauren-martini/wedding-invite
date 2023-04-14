@@ -7,14 +7,24 @@ html, body {margin: auto;
 }
 
 #iframe_container {
-    background-color: white;
-    opacity: 92.5%;
-    width: 50%;
-    height: 85vh;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+   background-color: white;
+   opacity: 92.5%;
+   height: 85vh;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 600px) { /* Mobile vertical <400px*/
+   #iframe_container {
+      width: 70%;
+   }
+}
+@media (min-width: 600px) { /* normal screen >400px */
+   #iframe_container {
+      width: 50%;
+   }
 }
 
 iframe {position: relative; 
