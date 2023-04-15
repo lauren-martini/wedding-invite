@@ -33,7 +33,8 @@ body {
 }
 
 .button { /*RSVP button*/
-  background-color: cornsilk;
+  /* background-color: cornsilk; */
+  background-color: linen;
   border: solid;
   border-color: black;
   border-width: 0.1em;
@@ -53,14 +54,14 @@ body {
   margin: 4px 2px;
   padding: 15px 32px; */
 
-  line-height: 5.5vh;
-  font-size: 3vh;
-  height: 5%;
-  width: 25%;
+  line-height: 4vh;
+  font-size: 2vh;
+  height: 3.75%;
+  width: 17.5%;
 
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 81.25%;
   left: 50%; /*Still need to account for width of button. Transform. */
   transform: translateX(-50%);
 }
