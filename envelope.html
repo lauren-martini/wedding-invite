@@ -5,6 +5,7 @@
     <style>
         body {
             display: table;
+            line-height: 1;
             margin: auto; /*centering*/
         }
         table { border-collapse: collapse; /*removes spaces*/}
@@ -12,11 +13,14 @@
             border-collapse: collapse; /*removes spaces*/
             padding: 0; /*removes spaces*/
         }
-        img { display: block; /* Needed to remove spacing*/}
+        img { 
+            display: block; /* Needed to remove spacing*/
+            width: 600px;
+        }
     </style>
   </head>
   <body>
-    <table>
+    <table cellspacing="0">
         <tr><td><img id="envelope" src="./images/env_0.png" alt="envelope with invite"></td></tr>
         <tr><td>
             <a href="https://lauren-martini.github.io/wedding-invite/">
