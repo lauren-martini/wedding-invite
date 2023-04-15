@@ -65,3 +65,19 @@ body {
   left: 50%; /*Still need to account for width of button. Transform. */
   transform: translateX(-50%);
 }
+
+/* Mobile version */
+@media only screen and (max-device-width: 480px) {
+  .container {
+    max-width: 90%;
+  }
+
+  #invite {
+    max-width: 100%;
+    left: 0;
+    margin: auto;
+    height: 90%;
+    opacity: 90%;
+    top: 5%;
+  }
+}
