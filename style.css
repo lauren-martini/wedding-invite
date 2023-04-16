@@ -151,6 +151,48 @@ body {
   }
 }
 
+/* Gifts Page */
+
+#bkg-gifts {
+  position: relative;
+  height: 100%;
+  background-image: url("./images/watercolor_from_photo_flowers_resized1500px.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#gifts-statement {
+  background-image: url("./images/gift-bkg.png");
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  height: 80%;
+  width: 65%;
+  opacity: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#gifts-txt {
+  margin-left: 20%;
+  margin-bottom: 10%;
+  margin-right: 20%;
+  margin-top: 10%;
+  font-size: 18pt;
+}
+
+#registry-link {
+  margin-left: 20%;
+  margin-bottom: 10%;
+  margin-right: 20%;
+  font-size: 16pt;
+  /* Styling will eventually be different than gifts-txt*/
+}
+
 /* Mobile version */
 @media screen and (max-device-width: 480px) {
   body {
@@ -195,25 +237,12 @@ body {
   .button {
     top: 81%;
   }
-}
 
-/* Gifts Page */
+  #gifts-statement {
+    width:90%;
+  }
 
-#bkg-gifts {
-  position: relative;
-  height: 100%;
-  background-image: url("./images/watercolor_from_photo_flowers_resized1500px.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#gifts-statement {
-  background-color: white;
-  position: relative;
-  height: 80%;
-  width: 65%;
-  opacity: 90%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  #gifts-txt {
+    font-size:14pt;
+  }
 }
