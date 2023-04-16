@@ -196,3 +196,24 @@ body {
     top: 81%;
   }
 }
+
+/* Gifts Page */
+
+#bkg-gifts {
+  position: relative;
+  height: 100%;
+  background-image: url("./images/watercolor_from_photo_flowers_resized1500px.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#gifts-statement {
+  background-color: white;
+  position: relative;
+  height: 80%;
+  width: 65%;
+  opacity: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

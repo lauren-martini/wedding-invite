@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>R.S.V.P</title>
+    <link rel="stylesheet" href="./rsvp.css">
+    <style type="text/css"></style>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div id="sidebarWrapper">
+        <a href="#">Startseite</a>
+        <a href="./rsvp">RSVP (EN)</a>
+        <a href="./rsvp-de">RSVP (DE)</a>
+        <a href="./gifts">Geschenke</a>
+      </div>
+    </div>
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+      <div id="bkg-img" class="slider">
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+      </div>
+      <div id="iframe_container">
+          <iframe data-tally-src="https://tally.so/embed/3yMAX4?alignLeft=1&hideTitle=1&transparentBackground=1" loading="lazy" frameborder="0" title="R.S.V.P - German"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+      </div>
+    </div>
+    <!-- JS For sidebar -->
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "120px";
+        // document.getElementById("main").style.marginLeft = "120px";
+        document.getElementsByClassName("openbtn")[0].style.display = "none";
+        
+      }
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        // document.getElementById("main").style.marginLeft= "0";
+        document.getElementsByClassName("openbtn")[0].style.display = "inline-block";
+      }
+    </script>
+  </body>
+</html>
