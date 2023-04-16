@@ -10,13 +10,15 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <div id="wrapper" style="height: 100vh; position: relative; overflow-y: hidden;"> <!--Needed to prevent y-overflow on mobile-->
+    <div id="wrapper" style="height: 100%; position: relative; overflow-y: hidden;"> <!--Needed to prevent y-overflow on mobile-->
       <div id="mySidebar" class="sidebar">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div id="sidebarWrapper">
           <a href="#">Home</a>
-          <a href="#">RSVP (EN)</a>
-          <a href="#">RSVP (DE)</a>
-          <a href="#">Registry</a>
+          <a href="./tally.html">RSVP (EN)</a>
+          <a href="./tally-de.html">RSVP (DE)</a>
+          <a href="#">Gift Info</a>
+        </div>
       </div>
       <div id="main">
         <button class="openbtn" onclick="openNav()">&#9776;</button>
@@ -31,12 +33,23 @@
     <script>
       function openNav() {
         document.getElementById("mySidebar").style.width = "120px";
-        document.getElementById("main").style.marginLeft = "120px";
+        // document.getElementById("main").style.marginLeft = "120px";
+        document.getElementsByClassName("openbtn")[0].style.display = "none";
+        if (window.innerWidth > 450 && window.innerHeight > 450) {
+        // large screen only
+          document.body.style.borderLeft = "140px solid #642d1c";
+        }
+        
       }
       
       function closeNav() {
         document.getElementById("mySidebar").style.width = "0";
-        document.getElementById("main").style.marginLeft= "0";
+        // document.getElementById("main").style.marginLeft= "0";
+        document.getElementsByClassName("openbtn")[0].style.display = "inline-block";
+        if (window.innerWidth > 450 && window.innerHeight > 450) {
+        // large screen only
+          document.body.style.borderLeft = "20px solid #642d1c";
+        }
       }
     </script>
   </body>
