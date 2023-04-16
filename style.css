@@ -61,7 +61,7 @@ body {
 
   cursor: pointer;
   position: absolute;
-  top: 81.25%;
+  top: 81%;
   left: 50%; /*Still need to account for width of button. Transform. */
   transform: translateX(-50%);
 }
