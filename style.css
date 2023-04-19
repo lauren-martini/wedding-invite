@@ -14,7 +14,7 @@ body {
 .bkg {
   position: relative;
   height: 100%;
-  background-image: url("./images/budapest.JPG");
+  background-image: url("./images/budapest.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
