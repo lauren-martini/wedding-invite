@@ -201,8 +201,6 @@ body {
   height:100%;
   overflow-y: auto;
   float: right;
-  margin-right: 2.5%;
-  margin-left: 2.5%;
   font-size: 18pt;
 }
 
@@ -213,6 +211,11 @@ body {
   background-image: url("./images/lauren-and-felix.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.photos-txt {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 
 #bkg-vows-img {
@@ -230,7 +233,7 @@ body {
   overflow-y: scroll;
 }
 
-.vows-txt {
+.vows-text {
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
