@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>wedding-invite</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div id="wrapper" style="height: 100%; position: relative; overflow-y: hidden;"> <!--Needed to prevent y-overflow on mobile-->
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div id="sidebarWrapper">
+          <a href=".">Home</a>
+          <a href="./rsvp">RSVP (EN)</a>
+          <a href="./rsvp-de">RSVP (DE)</a>
+          <a href="./gifts">Gift Info</a>
+          <a herf="./dress-code">Dress Code</a>
+          <a herf="./vows">Vows</a>
+          <a href="./photos">Photo Upload</a>
+        </div>
+      </div>
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <div id="bkg-gifts">
+            <div id="gifts-statement">our official stance is that there is no dress code. We want everyone to dress in a way that makes them comfortable. For those who would like more guidance, aiming somewhere around smart-casual to semi-formal would be perfect.</div>
+        </div>
+      </div>
+    </div>
+    <!-- JS For sidebar -->
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "120px";
+        // document.getElementById("main").style.marginLeft = "120px";
+        document.getElementsByClassName("openbtn")[0].style.display = "none";
+        if (window.innerWidth > 450 && window.innerHeight > 450) {
+        // large screen only
+          document.body.style.borderLeft = "140px solid #642d1c";
+        }
+        
+      }
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        // document.getElementById("main").style.marginLeft= "0";
+        document.getElementsByClassName("openbtn")[0].style.display = "inline-block";
+        if (window.innerWidth > 450 && window.innerHeight > 450) {
+        // large screen only
+          document.body.style.borderLeft = "20px solid #642d1c";
+        }
+      }
+    </script>
+  </body>
+</html>
