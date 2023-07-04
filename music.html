@@ -13,22 +13,22 @@
       <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div id="sidebarWrapper">
-          <a href=".">Startseite</a>
+          <a href=".">Home</a>
           <a href="./rsvp">RSVP (EN)</a>
           <a href="./rsvp-de">RSVP (DE)</a>
-          <a href="./gifts">Geschenke</a>
-          <a href="./dress-code">Kleiderordnung</a>
-          <a href="./vows">Eheversprechen</a>
-          <a href="./photos">Foto Upload</a>
-          <a href="./music">Musik</a>
+          <a href="./gifts">Gift Info</a>
+          <a href="./dress-code">Dress Code</a>
+          <a href="./vows">Vows</a>
+          <a href="./photos">Photo Upload</a>
+          <a href="./music">Music</a>
         </div>
       </div>
       <div id="main">
         <button class="openbtn" onclick="openNav()">&#9776;</button>
-        <div class="bkg">
-          <div class="container">
-            <img id="invite" src="./images/invite-landing-DE-scaled.png" alt="invite">
-            <a class="button" href="./rsvp-de">R.S.V.P.!</a>
+        <div id="bkg-gifts">
+          <div id="gifts-statement">
+              <div id="gifts-txt" style="font-size: 18pt;">This Spotify playlist contains most tracks we considered for the ceremony and reception.</div>
+              <div id="gifts-txt"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1gOFG2OrskAmRGtBXYoY72?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
           </div>
         </div>
       </div>
@@ -37,6 +37,7 @@
     <script>
       function openNav() {
         document.getElementById("mySidebar").style.width = "140px";
+        // document.getElementById("main").style.marginLeft = "120px";
         document.getElementsByClassName("openbtn")[0].style.display = "none";
         if (window.innerWidth > 450 && window.innerHeight > 450) {
         // large screen only
