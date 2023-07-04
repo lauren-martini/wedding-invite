@@ -230,6 +230,7 @@ body {
   background-image: url("./images/lauren-and-felix2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 #vows {
