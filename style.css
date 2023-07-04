@@ -204,8 +204,8 @@ body {
   height:100%;
   overflow-y: auto;
   float: right;
-  top: 50%;
-  transform: translate(-50%,-50%);
+  top: 10%;
+  transform: translateY(-50%);
 }
 
 #bkg-photos-img {
