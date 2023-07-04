@@ -197,11 +197,13 @@ body {
   /* margin-left: 15%;
   margin-right: 15%;
   margin-bottom:5%; */
+  position: relative;
+  margin-top:auto;
+  margin-bottom:auto;
   width: 45%;
   height:100%;
   overflow-y: auto;
   float: right;
-  font-size: 18pt;
 }
 
 #bkg-photos-img {
@@ -214,8 +216,9 @@ body {
 }
 
 .photos-txt {
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 18pt;
 }
 
 #bkg-vows-img {
