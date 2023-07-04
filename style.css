@@ -201,10 +201,10 @@ body {
   height:100%;
   overflow-y: auto;
   float: right;
-  top: 25%;
   background-image: url("./images/flower-background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  word-wrap: break-word;
 }
 
 #bkg-photos-img {
@@ -217,8 +217,8 @@ body {
 }
 
 .photos-txt {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 15%;
   font-size: 18pt;
 }
 
