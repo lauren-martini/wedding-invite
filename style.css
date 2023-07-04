@@ -199,6 +199,15 @@ body {
   margin-bottom:5%;
 }
 
+#bkg-vows {
+  position: relative;
+  height: 100%;
+  width: 55%;
+  background-image: url("./images/lauren-and-felix.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Mobile version */
 @media screen and (max-device-width: 480px) {
   body {
