@@ -193,10 +193,24 @@ body {
   /* Styling will eventually be different than gifts-txt*/
 }
 
-.photos-txt {
-  margin-left: 15%;
+.photos {
+  /* margin-left: 15%;
   margin-right: 15%;
-  margin-bottom:5%;
+  margin-bottom:5%; */
+  width: 45%;
+  float: right;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  overflow-y: auto;
+}
+
+#bkg-photos-img {
+  float: left;
+  height: 100%;
+  width: 55%;
+  background-image: url("./images/lauren-and-felix.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #bkg-vows-img {
@@ -210,7 +224,10 @@ body {
 
 #vows {
   width: 45%;
-  float:left;
+  float: right;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  overflow-y: auto;
 }
 
 /* Mobile version */
