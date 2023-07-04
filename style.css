@@ -194,9 +194,6 @@ body {
 }
 
 #photos {
-  /* margin-left: 15%;
-  margin-right: 15%;
-  margin-bottom:5%; */
   position: relative;
   margin-top:auto;
   margin-bottom:auto;
@@ -204,8 +201,9 @@ body {
   height:100%;
   overflow-y: auto;
   float: right;
-  top: 10%;
-  transform: translateY(-50%);
+  background-image: url("./images/flower-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #bkg-photos-img {
