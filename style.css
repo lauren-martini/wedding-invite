@@ -200,12 +200,17 @@ body {
 }
 
 #bkg-vows-img {
-  position: relative;
+  float: left;
   height: 100%;
   width: 55%;
   background-image: url("./images/lauren-and-felix.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#vows {
+  width: 45%;
+  float:left;
 }
 
 /* Mobile version */
