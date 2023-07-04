@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>wedding-invite</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div id="wrapper" style="height: 100%; position: relative; overflow-y: hidden;"> <!--Needed to prevent y-overflow on mobile-->
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div id="sidebarWrapper">
+          <a href=".">Home</a>
+          <a href="./rsvp">RSVP (EN)</a>
+          <a href="./rsvp-de">RSVP (DE)</a>
+          <a href="./gifts">Gift Info</a>
+          <a herf="./dress-code">Dress Code</a>
+          <a herf="./vows">Vows</a>
+          <a href="./photos">Photo Upload</a>
+        </div>
+      </div>
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <div id="bkg-gifts">
+            <div id="gifts-statement">
+                <div>Felix, you are, by far, the coolest person I have ever met. 
+ 
+And somehow, you seem to have only grown cooler, sweeter, funnier, and more dear to me with every year that passes.
+I feel so incredibly lucky to have met you, so lucky to have been put in the same CBA group as you in honors block, when I barely knew you, and just thought - "hey, he's pretty cute. And he actually carries his weight in group projects, very interesting."
+What a coincidence it seemed to me, when you just showed up in robotics club one day and asked to join my group, and when you "just happened" to end up in the desk right behind me in chemistry class, and started appearing at my orchestra concerts.
+I'm so happy to have received that first email with the header "let the debate begin!", kicking off our great Summer of philosophy in 2013, when I found out just how brilliant and utterly unique you are.
+I'm so happy, to have been with you on that hill, when I looked into your eyes and realized that I loved you. I will never forget the look in your eyes, full of stars, and I knew that I felt the same. I think I was never more deliriously happy than that moment, until now.
+
+Now, Felix, I love you more than I ever could have imagined then. When your face lights up, it brightens my whole world. I vow to always do my best to make your dreams come true, whether that means a trip around the world or an afternoon of cake and coffee at MPI.
+
+You've always shown me such incredible admiration, respect and tenderness. I vow to try and show you the depth of my faith in you and devotion to you, every day of our lives. I eagerly await all the adventures ahead, my dearest friend.
+</div>
+                <div></div>
+                <div>There’s no way I can sum up how much you mean to me in a few sentences right here, but let’s see what I can do.
+
+From our first meeting, you unlocked a universe of art and beauty, both through your intriguing tastes and music abilities but also your beauty.
+
+A few years ago, I had the crazy dream to circle the globe. Rather than being intimidated, or just gesture vaguely towards the distant future - in a leap of ambition and boundless curiosity - your audacious spirit led us to battling Vikings, feeding Nerpas in Irkutsk, and rocket sushi. I saw it then and I see it now, a spark of strong-willed independence to you, that will take us very far.
+
+When I started my PhD in Germany, you didn't hesitate to accompany me. Quite the opposite, you started learning German and started an astrophysics program there. Not only making my dream come true, but also spring-boarding your career beyond the stratosphere.
+
+Every single activity, from playing cards at By George’s between lectures, cooking a simple meal after a long day at home, to traveling across continents and planning this wedding - everything is more interesting, more enjoyable, and more memorable with you. So what more could I possibly ask for. What more can anyone ever possibly ask for?
+
+Somehow you continue to make me happier everyday. Your calming presence anchors me to what matters and, in particular, to a practical path to get there. Ultimately, you make me a better person, and your presence and compassion brightens not just mine, but everyones day.
+
+You continue to make all my dreams come true, and I’ll spend the rest of my life trying to make as many of your dreams come true as possible.</div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- JS For sidebar -->
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "120px";
+        // document.getElementById("main").style.marginLeft = "120px";
+        document.getElementsByClassName("openbtn")[0].style.display = "none";
+        if (window.innerWidth > 450 && window.innerHeight > 450) {
+        // large screen only
+          document.body.style.borderLeft = "140px solid #642d1c";
+        }
+        
+      }
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        // document.getElementById("main").style.marginLeft= "0";
+        document.getElementsByClassName("openbtn")[0].style.display = "inline-block";
+        if (window.innerWidth > 450 && window.innerHeight > 450) {
+        // large screen only
+          document.body.style.borderLeft = "20px solid #642d1c";
+        }
+      }
+    </script>
+  </body>
+</html>
