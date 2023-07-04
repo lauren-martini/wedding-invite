@@ -224,10 +224,12 @@ body {
 
 #vows {
   width: 45%;
-  float: right;
-  margin-right: 2.5%;
+  overflow-y: scroll;
+}
+
+.vows-txt {
   margin-left: 2.5%;
-  overflow-y: auto;
+  margin-right: 2.5%;
 }
 
 /* Mobile version */
